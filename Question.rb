@@ -11,16 +11,10 @@ class Question
     @random2 = rand(1...20)
     puts "What does #{@random1} plus #{@random2} equal?"
     @answer = gets.chomp
-    validate
   end
 # compare answer
   def validate
-    # puts "Answer = #{@answer}"
-    # puts "Truthy = #{@random1 + @random2}"
-    # puts "Truthy = #{@random1.class}"
-
-    puts "You're correct!" if @answer.to_i == @random1 + @random2
-    puts "Oops, that is incorrect!" unless @answer.to_i == @random1 + @random2
+    @answer.to_i == @random1 + @random2
   end
 
 end

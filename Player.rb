@@ -6,7 +6,5 @@ class Player
     @name = name
     @lives = 3
   end
-# update number of lives
-
 
 end
