@@ -15,14 +15,12 @@ class Question
   end
 # compare answer
   def validate
-    puts "Answer = #{@answer.class}"
+    # puts "Answer = #{@answer}"
     # puts "Truthy = #{@random1 + @random2}"
-    puts "Truthy = #{@random1.class}"
-    if @answer.to_i == (@random1 + @random2)
-      puts "works"
-    end
-    # puts "You're correct!" if @answer == (@random1 + @random2)
-    # puts "Oops, that is incorrect!" if @answer != @random1 + @random2
+    # puts "Truthy = #{@random1.class}"
+
+    puts "You're correct!" if @answer.to_i == @random1 + @random2
+    puts "Oops, that is incorrect!" unless @answer.to_i == @random1 + @random2
   end
 
 end
